@@ -1,0 +1,19 @@
+<% title "Cvcats" %>
+<div id="text">
+
+<% for cvcat in @cvcats %>
+  <h3><%=h cvcat.category %></h3>
+    <% if current_user %>      
+    <%= link_to "Edit", edit_cvcat_path(cvcat), :class => "crud" %>
+    <%= link_to "Destroy", cvcat, :class => "crud", :confirm => 'Are you sure?', :method => :delete %>
+  <% end %>
+    <ul>
+      <% cvcat.cventries.each do |cventry| %> 
+      <li><%= cventry.entry %></li>
+      <% end %>
+      </ul>
+  <% end %>
+  <% if current_user %>
+    <p><%= link_to "New Category", new_cvcat_path, :class => "crud" %></p>
+  <% end %>
+</div>

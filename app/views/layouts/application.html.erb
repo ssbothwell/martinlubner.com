@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+	<title>Martin Lubner</title>
+</head>
+<body>
+<div id="container">
+
+<div id="col1">
+	<div class="liquid-round">
+	<div class="top"><span></span></div>
+
+	<div class="center-content">
+		<div id="title">
+		<h2><%= link_to "Martin Lubner", root_url %></h2>
+
+		</div>
+		<ul>
+			<li><div class="cv"><div class="button"><%= link_to "Curriculum Vitae", cvcats_path %></div></div></li>
+			<li><div class="gallery"><div class="button"><%= link_to "Paintings", paintings_path %></div></div></li>
+		</ul>
+	</div>
+	<div class="bottom"><span></span></div>
+	</div>
+
+</div>
+
+<div id="col2">
+	<div class="liquid-round">
+	<div class="top"><span></span></div>
+
+	<div class="center-content">
+		<div id="content">
+		  <%= yield %>
+		</div>
+	</div>
+	<div class="bottom"><span></span></div>
+	</div>
+</div>
+
+
+</body>
+</html>

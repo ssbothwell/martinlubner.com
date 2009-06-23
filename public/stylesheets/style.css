@@ -1,0 +1,97 @@
+#container {
+	text-align: left;
+	width: 1000px;
+	margin: 70px auto 0 auto;
+	font-family: sans-serif;
+}
+
+#title {
+	float: left;
+	width: 170px;
+	height: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: -15px;
+}
+
+#col1 {
+	float: left;
+	width: 170px;
+	margin-top: 250px;
+}
+
+#col2 {
+	float: right;
+	width: 800px;
+	height: 600px;
+}
+
+#col1 li {
+	list-style: none;
+}
+
+#image {
+	float: left;
+	margin-left: -10px;
+	margin-top: 20px;
+}
+
+#text {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.liquid-round {
+	background:#fff url(../images/leftside.png) repeat-y left top;
+}
+
+.center-content {
+	position: relative;
+	background:url(../images/rightside.png) repeat-y right top;
+	padding: 1x 20px 1px 25px;
+	margin: -16px 0 -20px 0;
+}
+
+.top {
+	height: 11px;
+	background:url(../images/top-l.png) no-repeat left top;
+}
+.top span {
+	display: block;
+	position: relative;
+	height: 11px;
+	background:url(../images/top-r.png) no-repeat right top;	
+}
+.bottom {
+	height: 11px;
+	background:url(../images/bottom-l.png) no-repeat left bottom;
+}
+.bottom span {
+	display: block;
+	position: relative;
+	height: 11px;
+	background:url(../images/bottom-r.png) no-repeat right top;
+}
+
+#col2 .bottom {
+}
+
+#col2 .center-content {
+	height: 600px;
+	margin: -4px 0 0px 0;
+	overflow: auto;
+}
+
+a, a:visited, a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+#user_nav {
+  font-size: 12px;
+	float: right;
+}
+
+#content {
+	margin: 0 20px;
+}
