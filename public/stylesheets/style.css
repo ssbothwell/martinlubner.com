@@ -95,3 +95,11 @@ a, a:visited, a:hover {
 #content {
 	margin: 0 20px;
 }
+
+.picture {
+  margin: 2px;
+  height: auto;
+  width: 140px;
+  float: left;
+  text-align: center;
+}
