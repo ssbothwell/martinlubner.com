@@ -98,8 +98,14 @@ a, a:visited, a:hover {
 
 .picture {
   margin: 2px;
-  height: auto;
+  height: 160px;
   width: 140px;
   float: left;
+  text-align: center;
+}
+
+#painting {
+  width: auto;
+  margin: 40px auto 0px auto;
   text-align: center;
 }
