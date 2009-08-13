@@ -3,7 +3,7 @@
 <div class="picture">
   <%= link_to image_tag(painting.photo.url(:small)), painting %><br />
   <%=h painting.title %><br />
-  <%=h painting.description %><br />
+  <%=h painting.description %>
   <%=h painting.year %><br />
   <% if current_user %>
     <%= link_to "Edit", edit_painting_path(painting), :class => "crud" %>
