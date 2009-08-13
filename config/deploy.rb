@@ -39,8 +39,8 @@ namespace :deploy do
   
   desc "Sync the public/assets directory."
   task :assets do
-    system "rsync -vr --exclude='.DS_Store' public/assets #{user}@thetis.dreamhost.com:#{shared_path}/"
-    system "rsync -vr --exclude='.DS_Store' db/production.sqlite3 #{user}@thetis.dreamhost.com:#{shared_path}/"
+    system "rsync -vr --exclude='.DS_Store' public/assets #{user}@sox.dreamhost.com:#{shared_path}/"
+    system "rsync -vr --exclude='.DS_Store' db/production.sqlite3 #{user}@sox.dreamhost.com:#{shared_path}/"
   end
 end
 
