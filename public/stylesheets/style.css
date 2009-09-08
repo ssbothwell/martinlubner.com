@@ -1,6 +1,5 @@
-#container {
+.container {
 	text-align: left;
-	width: 1000px;
 	margin: 70px auto 0 auto;
 	font-family: sans-serif;
 }
@@ -13,20 +12,22 @@
 	padding-right: 5px;
 	margin-top: -15px;
 }
-
-#col1 {
+.box {
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.col1 {
 	float: left;
-	width: 170px;
+	width: 160px;
 	margin-top: 250px;
 }
 
-#col2 {
+.col2 {
 	float: right;
-	width: 800px;
-	height: 600px;
+	height: 500px;
 }
 
-#col1 li {
+.col1 li {
 	list-style: none;
 }
 
