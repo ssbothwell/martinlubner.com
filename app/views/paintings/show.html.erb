@@ -5,9 +5,6 @@
   <%=h @painting.title %>
 <br />  
   <%=h @painting.width %>"x<%=h @painting.height %>"
-</p>
-
-<p>
   <% if current_user %>
     <%= link_to "Edit", edit_painting_path(@painting), :class => "crud" %> |
     <%= link_to "Destroy", @painting, :class => "crud", :confirm => 'Are you sure?', :method => :delete %> |
