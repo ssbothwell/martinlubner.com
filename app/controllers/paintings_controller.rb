@@ -5,7 +5,8 @@ class PaintingsController < ApplicationController
   end
 
   def index
-    @paintings = Painting.search(params[:search], params[:page])
+    @paintings = Painting.find(:all)
+#    @paintings = Painting.search(params[:search], params[:page])
   end
   
   def show
