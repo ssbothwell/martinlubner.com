@@ -7,9 +7,16 @@ class Painting < ActiveRecord::Base
   validates_attachment_size :photo, :less_than => 12.megabytes
   validates_attachment_content_type :photo, :content_type => ['image/jpeg', 'image/png']
   
-  def self.search(search, page)
-    paginate :per_page => 16, :page => page,
-             :order => 'created_at ASC'
+  def self.search(page, year)
+    conditions = {}
+    if year
+      start_date = year.to_i                                               
+      end_date = (start_date + 9)                                           
+      conditions.merge!({ :year => start_date..end_date })
+    end
+    paginate  :per_page => 16, :page => page,                       
+              :conditions => conditions,     
+              :order => 'created_at ASC'
   end
   
 end
