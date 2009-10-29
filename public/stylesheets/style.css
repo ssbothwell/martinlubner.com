@@ -6,7 +6,6 @@
 
 #title {
 	float: left;
-	width: 170px;
 	height: 50px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -18,7 +17,6 @@
 }
 .col1 {
 	float: left;
-	width: 160px;
 	margin-top: 250px;
 }
 
@@ -48,11 +46,6 @@ a, a:visited, a:hover {
 	color: #000;
 }
 
-#user_nav {
-  font-size: 12px;
-	float: right;
-}
-
 .content {
 	margin: 0 20px;
 }
@@ -60,17 +53,19 @@ a, a:visited, a:hover {
 .picture {
   margin: 2px;
   height: 170px;
-  width: 140px;
   float: left;
   text-align: center;
 }
 
 .painting {
-  width: auto;
   margin: 10px auto 0px auto;
   text-align: center;
 }
 
-.crud{
-	color: red;
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
