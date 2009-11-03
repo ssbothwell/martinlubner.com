@@ -14,7 +14,7 @@ class Painting < ActiveRecord::Base
       end_date = (start_date + 9)                                           
       conditions.merge!({ :year => start_date..end_date })
     end
-    paginate  :per_page => 16, :page => page,                       
+    paginate  :per_page => 12, :page => page,                       
               :conditions => conditions,     
               :order => 'created_at ASC'
   end
