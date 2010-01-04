@@ -1,13 +1,14 @@
 <% title "Paintings" %>
-<div class="gallery">
-	<div class="span-16">
-	<%= link_to '2000s', {:controller => :paintings, :action => :index, :year => 2000 } %>
-	<%= link_to '1990s', {:controller => :paintings, :action => :index, :year => 1990 } %>
-	<%= link_to '1980s', {:controller => :paintings, :action => :index, :year => 1980 } %>
-	<%= link_to 'all', {:controller => :paintings, :action => :index } %>
-	-
-	all paintings are oil on canvas unless otherwise noted
-	</div>
+<div class="span-16">
+<%= link_to '2000s', {:controller => :paintings, :action => :index, :year => 2000 } %>
+<%= link_to '1990s', {:controller => :paintings, :action => :index, :year => 1990 } %>
+<%= link_to '1980s', {:controller => :paintings, :action => :index, :year => 1980 } %>
+<%= link_to 'all', {:controller => :paintings, :action => :index } %>
+-
+all paintings are oil on canvas unless otherwise noted
+</div>
+
+<div class="gallery span-17">
 <% for painting in @paintings %>
 <div class="picture span-4">
   <%= link_to image_tag(painting.photo.url(:small)), painting %><br />

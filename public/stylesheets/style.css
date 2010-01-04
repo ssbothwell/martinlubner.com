@@ -50,6 +50,10 @@ a, a:visited, a:hover {
 	margin: 0 20px;
 }
 
+.gallery {
+	margin-top: 10px;
+}
+
 .picture {
   margin: 2px;
   height: 170px;
@@ -69,3 +73,4 @@ a, a:visited, a:hover {
 .right {
 	float: right;
 }
+
