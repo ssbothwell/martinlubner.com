@@ -1,3 +1,26 @@
+$('#readyTest').corner();
+
+$(function(){
+$('#dynCorner').click(function() {
+        $('#dynamic').corner();
+});
+$('#dynUncorner').click(function() {
+        $('#dynamic').uncorner();
+});
+
+    $('div.inner').wrap('<div class="outer"></div>');
+    $('p').wrap("<code></code>");
+
+    $('div.demo, div.inner').each(function() {
+        var t = $('p', this).text();
+        eval(t);
+    });
+
+    // fixed/fluid tests
+    $("div.box").corner("keep");
+    $("#abs").corner("cc:#08e");
+});
+
 $(function() {
   $('form a.add_child').click(function() {
     var assoc   = $(this).attr('data-association');
