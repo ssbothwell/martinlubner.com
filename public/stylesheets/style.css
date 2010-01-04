@@ -66,6 +66,10 @@ a, a:visited, a:hover {
   text-align: center;
 }
 
+.footer {
+	margin-top: -10px;
+}
+
 .left {
 	float: left;
 }

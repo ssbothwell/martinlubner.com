@@ -19,7 +19,7 @@ all paintings are oil on canvas unless otherwise noted
 <% end %>
 </div>
 
-<div class="span-16">
+<div class="footer span-16">
 	<%= will_paginate @paintings, :class => "left" %>
 	<% if current_user %>
 	  <%= link_to "New Painting", new_painting_path, :class => "right" %>
